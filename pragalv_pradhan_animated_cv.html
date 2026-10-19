@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pragalv Pradhan — animated CV</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<style>
+  :root {
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f4f4f2;
+    --color-background-info: #e6f1fb;
+    --color-text-primary: #111111;
+    --color-text-secondary: #5f5e5a;
+    --color-text-tertiary: #888780;
+    --color-text-info: #185fa5;
+    --color-text-success: #3b6d11;
+    --color-text-warning: #854f0b;
+    --color-border-tertiary: rgba(0,0,0,0.12);
+    --border-radius-md: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1b1b1a;
+      --color-background-secondary: #2c2c2a;
+      --color-background-info: #0c447c;
+      --color-text-primary: #f1efe8;
+      --color-text-secondary: #b4b2a9;
+      --color-text-tertiary: #888780;
+      --color-text-info: #85b7eb;
+      --color-text-success: #97c459;
+      --color-text-warning: #fac775;
+      --color-border-tertiary: rgba(255,255,255,0.15);
+    }
+  }
+  body { background: var(--color-background-primary); color: var(--color-text-primary); margin: 0; padding: 2rem 1rem; }
+  .cv-wrap { max-width: 680px; margin: 0 auto; }
+  h3 { font-size: 16px; font-weight: 500; margin: 0; }
+  p { margin: 0; }
+
+  @keyframes fadeInUp { from { opacity:0; transform:translateY(14px);} to { opacity:1; transform:translateY(0);} }
+  @keyframes popIn { from { opacity:0; transform:scale(0.85);} to { opacity:1; transform:scale(1);} }
+  .cv-fade { opacity:0; animation: fadeInUp 0.6s ease forwards; }
+  .cv-pop { opacity:0; animation: popIn 0.5s ease forwards; }
+  .cv-bar-fill { width:0; transition: width 1.1s ease 0.3s; }
+</style>
+</head>
+<body>
+<div class="cv-wrap">
+
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Animated profile of Pragalv Pradhan, a Grade 12 graduate from Nepal, showing education stats, leadership timeline, certifications and languages.</h2>
+
+<div class="cv-fade" style="display:flex; align-items:center; gap:14px; padding-top:1rem; animation-delay:0.05s;">
+  <div style="width:56px; height:56px; min-width:56px; border-radius:50%; background:var(--color-background-info); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:18px; color:var(--color-text-info);">PP</div>
+  <div>
+    <p style="font-weight:500; font-size:19px; margin:0;">Pragalv Pradhan</p>
+    <p style="font-size:13px; color:var(--color-text-secondary); margin:2px 0 0;">Grade 12 graduate &middot; student technology leader &middot; community &amp; environmental advocate</p>
+  </div>
+</div>
+
+<div class="cv-fade" style="display:flex; flex-wrap:wrap; gap:14px; margin:10px 0 1.5rem; font-size:13px; color:var(--color-text-secondary); animation-delay:0.15s;">
+  <span><i class="ti ti-map-pin" style="font-size:14px; vertical-align:-2px; margin-right:4px;" aria-hidden="true"></i>Thasikhel, Kusunti, Lalitpur, Nepal</span>
+  <span><i class="ti ti-mail" style="font-size:14px; vertical-align:-2px; margin-right:4px;" aria-hidden="true"></i>pragalvpradhan667@gmail.com</span>
+  <span><i class="ti ti-phone" style="font-size:14px; vertical-align:-2px; margin-right:4px;" aria-hidden="true"></i>+977 9824307956</span>
+  <span><i class="ti ti-phone" style="font-size:14px; vertical-align:-2px; margin-right:4px;" aria-hidden="true"></i>+49 176 76910377</span>
+  <span><i class="ti ti-brand-github" style="font-size:14px; vertical-align:-2px; margin-right:4px;" aria-hidden="true"></i><a href="https://github.com/Pragalv118" style="color:inherit; text-decoration:none;" target="_blank" rel="noopener">github.com/Pragalv118</a></span>
+</div>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-bottom:1.75rem;">
+  <div class="cv-fade" style="background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:1rem; animation-delay:0.2s;">
+    <p style="font-size:13px; color:var(--color-text-secondary); margin:0 0 4px;">NEB grade 12 GPA</p>
+    <p style="font-size:24px; font-weight:500; margin:0;"><span class="cv-num" data-target="3.30">0.00</span></p>
+  </div>
+  <div class="cv-fade" style="background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:1rem; animation-delay:0.3s;">
+    <p style="font-size:13px; color:var(--color-text-secondary); margin:0 0 4px;">Grade 11 GPA</p>
+    <p style="font-size:24px; font-weight:500; margin:0;"><span class="cv-num" data-target="2.37">0.00</span></p>
+  </div>
+  <div class="cv-fade" style="background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:1rem; animation-delay:0.4s;">
+    <p style="font-size:13px; color:var(--color-text-secondary); margin:0 0 4px;">SEE GPA</p>
+    <p style="font-size:24px; font-weight:500; margin:0;"><span class="cv-num" data-target="3.02">0.00</span>/4.0</p>
+  </div>
+</div>
+
+<div class="cv-fade" style="margin-bottom:0.75rem; animation-delay:0.45s;">
+  <h3 style="margin:0 0 2px;">Education</h3>
+  <p style="font-size:14px; color:var(--color-text-secondary); margin:0;">St. Xavier's School, Jawalakhel &middot; 2024&ndash;2026</p>
+  <p style="font-size:13px; color:var(--color-text-tertiary); margin:4px 0 0;">Physics, chemistry, mathematics, biology, computer science</p>
+</div>
+
+<div style="margin:1.75rem 0;">
+  <h3 class="cv-fade" style="margin:0 0 1rem; animation-delay:0.5s;">Leadership timeline</h3>
+  <div style="position:relative; padding-left:22px;">
+    <div style="position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:var(--color-border-tertiary);"></div>
+
+    <div class="cv-fade" style="position:relative; margin-bottom:1.25rem; animation-delay:0.6s;">
+      <div class="cv-pop" style="position:absolute; left:-22px; top:3px; width:12px; height:12px; border-radius:50%; background:var(--color-text-info); animation-delay:0.65s;"></div>
+      <p style="font-weight:500; font-size:14px; margin:0;">President, Student Technology Council</p>
+      <p style="font-size:12px; color:var(--color-text-secondary); margin:2px 0 4px;">2025&ndash;2026</p>
+      <p style="font-size:13px; color:var(--color-text-secondary); margin:0;">Led a national-level collaboration with Armed Police Force Nepal; ran the Annual Sports Meet and Science Exhibition end-to-end.</p>
+    </div>
+
+    <div class="cv-fade" style="position:relative; margin-bottom:1.25rem; animation-delay:0.75s;">
+      <div class="cv-pop" style="position:absolute; left:-22px; top:3px; width:12px; height:12px; border-radius:50%; background:var(--color-text-success); animation-delay:0.8s;"></div>
+      <p style="font-weight:500; font-size:14px; margin:0;">President, ECO/FOZ Club</p>
+      <p style="font-size:12px; color:var(--color-text-secondary); margin:2px 0 4px;">2023&ndash;2024</p>
+      <p style="font-size:13px; color:var(--color-text-secondary); margin:0;">Turned an inactive club into a structured, high-output environmental team.</p>
+    </div>
+
+    <div class="cv-fade" style="position:relative; margin-bottom:0.25rem; animation-delay:0.9s;">
+      <div class="cv-pop" style="position:absolute; left:-22px; top:3px; width:12px; height:12px; border-radius:50%; background:var(--color-text-warning); animation-delay:0.95s;"></div>
+      <p style="font-weight:500; font-size:14px; margin:0;">Vice President, Leo Club Machapokhari</p>
+      <p style="font-size:12px; color:var(--color-text-secondary); margin:2px 0 4px;">2026&ndash;present</p>
+      <p style="font-size:13px; color:var(--color-text-secondary); margin:0;">Community service leadership role.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cv-fade" style="background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:0.85rem 1rem; margin-bottom:1.75rem; animation-delay:1.0s;">
+  <i class="ti ti-plane-departure" style="font-size:16px; vertical-align:-3px; margin-right:6px; color:var(--color-text-secondary);" aria-hidden="true"></i>
+  <span style="font-size:13px; color:var(--color-text-secondary);">Group leader of 10 students on an international exchange to the Netherlands (Class 10)</span>
+</div>
+
+<div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:1.5rem;">
+  <div>
+    <h3 class="cv-fade" style="margin:0 0 0.75rem; animation-delay:1.05s;">Certifications</h3>
+    <div class="cv-fade" style="display:flex; align-items:center; gap:8px; margin-bottom:8px; animation-delay:1.15s;">
+      <i class="ti ti-certificate" style="font-size:16px; color:var(--color-text-secondary);" aria-hidden="true"></i>
+      <span style="font-size:13px;">Public speaking certificate &mdash; Ward Office Lalitpur, 2024</span>
+    </div>
+    <div class="cv-fade" style="display:flex; align-items:center; gap:8px; animation-delay:1.25s;">
+      <i class="ti ti-certificate" style="font-size:16px; color:var(--color-text-secondary);" aria-hidden="true"></i>
+      <span style="font-size:13px;">EF SET English, B2 upper intermediate</span>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="cv-fade" style="margin:0 0 0.75rem; animation-delay:1.1s;">Languages</h3>
+    <div class="cv-fade" style="margin-bottom:8px; animation-delay:1.2s;">
+      <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-text-secondary); margin-bottom:3px;"><span>English</span><span>Fluent</span></div>
+      <div style="height:6px; border-radius:3px; background:var(--color-border-tertiary);"><div class="cv-bar-fill" data-pct="95" style="height:100%; border-radius:3px; background:var(--color-text-info);"></div></div>
+    </div>
+    <div class="cv-fade" style="margin-bottom:8px; animation-delay:1.3s;">
+      <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-text-secondary); margin-bottom:3px;"><span>Nepali</span><span>Native</span></div>
+      <div style="height:6px; border-radius:3px; background:var(--color-border-tertiary);"><div class="cv-bar-fill" data-pct="100" style="height:100%; border-radius:3px; background:var(--color-text-info);"></div></div>
+    </div>
+    <div class="cv-fade" style="margin-bottom:8px; animation-delay:1.4s;">
+      <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-text-secondary); margin-bottom:3px;"><span>Hindi</span><span>Intermediate</span></div>
+      <div style="height:6px; border-radius:3px; background:var(--color-border-tertiary);"><div class="cv-bar-fill" data-pct="55" style="height:100%; border-radius:3px; background:var(--color-text-info);"></div></div>
+    </div>
+    <div class="cv-fade" style="animation-delay:1.5s;">
+      <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-text-secondary); margin-bottom:3px;"><span>Dutch</span><span>Intermediate</span></div>
+      <div style="height:6px; border-radius:3px; background:var(--color-border-tertiary);"><div class="cv-bar-fill" data-pct="55" style="height:100%; border-radius:3px; background:var(--color-text-info);"></div></div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script>
+(function(){
+  var nums = document.querySelectorAll('.cv-num');
+  nums.forEach(function(el){
+    var target = parseFloat(el.getAttribute('data-target'));
+    var duration = 1100;
+    var start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var val = target * progress;
+      el.textContent = val.toFixed(2);
+      if(progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toFixed(2);
+    }
+    setTimeout(function(){ requestAnimationFrame(step); }, 200);
+  });
+  setTimeout(function(){
+    document.querySelectorAll('.cv-bar-fill').forEach(function(bar){
+      bar.style.width = bar.getAttribute('data-pct') + '%';
+    });
+  }, 50);
+})();
+</script>
+</body>
+</html>
